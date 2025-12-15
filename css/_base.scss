@@ -1,3 +1,8 @@
+$darkBlueBackground: #09082b;
+$darkBlueHeader: #111051;
+$aqua: aqua;
+$white: #f3ffff;
+
 @mixin banner($image, $positionY){
     width: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent), url($image);

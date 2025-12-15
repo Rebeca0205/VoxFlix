@@ -17,6 +17,26 @@ body main .main__carrousel .--row .poster, body main .main__searchSpace .--searc
   transition: transform 0.3s;
 }
 
+#searchSection__searchInput {
+  border-radius: 200px;
+  border: 5px solid rgb(112, 255, 255);
+  padding: 10px 70px 10px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  outline: none;
+  font-size: 16px;
+}
+#searchSection__searchInput:focus {
+  border: 5px solid rgb(112, 255, 255);
+  background-color: #01f7ff;
+  color: rgba(4, 25, 130, 0.5);
+}
+#searchSection__searchInput::-moz-placeholder {
+  color: rgba(4, 25, 130, 0.5);
+}
+#searchSection__searchInput::placeholder {
+  color: rgba(4, 25, 130, 0.5);
+}
+
 * {
   box-sizing: inherit;
 }
@@ -91,25 +111,6 @@ body main .main__banner .main__bannerSearch .main__searchSection {
 body main .main__banner .main__bannerSearch .main__searchSection #searchSection__icon {
   cursor: pointer;
 }
-body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput {
-  border-radius: 200px;
-  border: 5px solid rgb(112, 255, 255);
-  padding: 10px 70px 10px 5px;
-  font-family: "Roboto Condensed", sans-serif;
-  outline: none;
-  font-size: 16px;
-}
-body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput:focus {
-  border: 5px solid rgb(112, 255, 255);
-  background-color: #01f7ff;
-  color: rgba(4, 25, 130, 0.5);
-}
-body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput::-moz-placeholder {
-  color: rgba(4, 25, 130, 0.5);
-}
-body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput::placeholder {
-  color: rgba(4, 25, 130, 0.5);
-}
 body main .main__searchSpace {
   margin: 40px 30px;
 }
@@ -123,7 +124,6 @@ body main .main__searchSpace .--searchGrid .poster img {
 }
 body main .main__searchSpace .--searchGrid .poster h3 {
   color: aqua;
-  text-overflow: ellipsis;
 }
 body main .hidden {
   display: none;
