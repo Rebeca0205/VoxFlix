@@ -1,0 +1,164 @@
+* {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #09082b;
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #111051;
+        padding: 15px 20px;
+        align-items: center;
+
+        h1{
+            color: aqua;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .header__Logo{
+            width: 4%;
+            height: 4%;
+        }
+    }
+
+    main {
+        .main__banner{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 120px 0;
+            height: 100%;
+            @include banner("../img/VoxBanner.png", 25%);
+
+            .main__bannerSearch{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+                background-color: rgba(0, 255, 255, 0.7); // aqua con 50% de opacidad
+                border: 5px solid rgba(112, 255, 255, 1);
+                margin-right: 40px;
+
+                h2{
+                    &:first-child{
+                        margin-bottom: 10px;
+                    }
+
+                    &:nth-child(2){
+                        margin-top: 0;
+                    }
+
+                    box-sizing: border-box;
+                    font-size: 2.6rem;
+                    text-align: center;
+                    color: #f3ffff;
+                }
+            
+                .main__searchSection{
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    margin-bottom: 15px;
+
+                    #searchSection__icon{
+                        cursor: pointer;
+                    }
+
+                    #searchSection__searchInput{
+                        border-radius: 200px;
+                        border: 5px solid rgba(112, 255, 255, 1);
+                        padding: 10px 70px 10px 5px;
+                        font-family: "Roboto Condensed", sans-serif;
+                        outline: none; 
+                        font-size: 16px;
+
+                        &:focus{
+                            border: 5px solid rgba(112, 255, 255, 1);
+                            background-color: #01f7ff;
+                            color: rgba(4, 25, 130, 0.5);
+                        }
+
+                        &::placeholder{
+                            color: rgba(4, 25, 130, 0.5);
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main__searchSpace{
+            margin: 40px 30px;
+
+            h2{
+                color: aqua;
+            }
+
+            .--searchGrid{
+                @extend %flexCarousel;
+                
+                .poster {
+                    @extend %poster;
+
+                    img {
+                        width: 100%;
+                        height: 80%;
+                        border-radius: 6px;
+                    }
+
+                    h3{
+                        color: aqua;
+
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .main__carrousel{
+            margin: 40px 30px;
+
+            h2{
+                color: aqua;
+            }
+
+            .--row {
+                @extend %flexCarousel;
+
+                .poster {
+                    @extend %poster;
+                    img {
+                        width: 100%;
+                        height: 80%;
+                        border-radius: 6px;
+                    }
+
+                    h3{
+                        color: aqua;
+
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                
+                
+            }
+
+
+        }
+    }
+}
+

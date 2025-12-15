@@ -1,0 +1,145 @@
+body main .main__carrousel .--row, body main .main__searchSpace .--searchGrid {
+  display: flex;
+  gap: 12px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+body main .main__carrousel .--row::-webkit-scrollbar-thumb, body main .main__searchSpace .--searchGrid::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 10px;
+}
+
+body main .main__carrousel .--row .poster, body main .main__searchSpace .--searchGrid .poster {
+  min-width: 150px;
+  height: 270px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #09082b;
+}
+body header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #111051;
+  padding: 15px 20px;
+  align-items: center;
+}
+body header h1 {
+  color: aqua;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body header .header__Logo {
+  width: 4%;
+  height: 4%;
+}
+body main .main__banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 120px 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent), url("../img/VoxBanner.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-color: rgba(120, 120, 120, 0);
+  background-blend-mode: multiply;
+  background-position-y: 25%;
+  background-position-x: 78%;
+}
+body main .main__banner .main__bannerSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  background-color: rgba(0, 255, 255, 0.7);
+  border: 5px solid rgb(112, 255, 255);
+  margin-right: 40px;
+}
+body main .main__banner .main__bannerSearch h2 {
+  box-sizing: border-box;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #f3ffff;
+}
+body main .main__banner .main__bannerSearch h2:first-child {
+  margin-bottom: 10px;
+}
+body main .main__banner .main__bannerSearch h2:nth-child(2) {
+  margin-top: 0;
+}
+body main .main__banner .main__bannerSearch .main__searchSection {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+body main .main__banner .main__bannerSearch .main__searchSection #searchSection__icon {
+  cursor: pointer;
+}
+body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput {
+  border-radius: 200px;
+  border: 5px solid rgb(112, 255, 255);
+  padding: 10px 70px 10px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  outline: none;
+  font-size: 16px;
+}
+body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput:focus {
+  border: 5px solid rgb(112, 255, 255);
+  background-color: #01f7ff;
+  color: rgba(4, 25, 130, 0.5);
+}
+body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput::-moz-placeholder {
+  color: rgba(4, 25, 130, 0.5);
+}
+body main .main__banner .main__bannerSearch .main__searchSection #searchSection__searchInput::placeholder {
+  color: rgba(4, 25, 130, 0.5);
+}
+body main .main__searchSpace {
+  margin: 40px 30px;
+}
+body main .main__searchSpace h2 {
+  color: aqua;
+}
+body main .main__searchSpace .--searchGrid .poster img {
+  width: 100%;
+  height: 80%;
+  border-radius: 6px;
+}
+body main .main__searchSpace .--searchGrid .poster h3 {
+  color: aqua;
+  text-overflow: ellipsis;
+}
+body main .hidden {
+  display: none;
+}
+body main .main__carrousel {
+  margin: 40px 30px;
+}
+body main .main__carrousel h2 {
+  color: aqua;
+}
+body main .main__carrousel .--row .poster img {
+  width: 100%;
+  height: 80%;
+  border-radius: 6px;
+}
+body main .main__carrousel .--row .poster h3 {
+  color: aqua;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=styles.css.map */

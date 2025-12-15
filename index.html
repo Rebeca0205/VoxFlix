@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img id="header__user" src="img/user.svg" alt="usuario">
+        <h1>VOXFLIX</h1>
+        <img class="header__Logo" src="img/Voxflix_Logo.png" alt="Logo_VoxFlix">
+    </header>
+    <main class="main">
+        <section class="main__banner">
+            <div class="main__bannerSearch">
+                <h2>CONECTA, BUSCA, DISFRUTA. VOX SIEMPRE ESTÁ AL AIRE</h2>
+                <div class="main__searchSection">
+                    <img id="searchSection__icon" src="img/search.svg" alt="icono_buscar">
+                    <input type="text" id="searchSection__searchInput" placeholder="Buscar">
+                </div>
+            </div>
+        </section>
 
+        <section id="searchSpace" class="main__searchSpace hidden">
+            <h2>¿Buscabas esto?</h2>
+            <div class="main__searchSpace --searchGrid" id="searchGrid"></div>
+        </section>
+
+        <section class="main__carrousel">
+            <h2>Explora… si te atreves</h2>
+            <div class="main__carrousel --row" id="adventure"></div>
+        </section>
+
+        <section class="main__carrousel">
+            <h2>Miedo, pero bien producido</h2>
+            <div class="main__carrousel --row" id="horror"></div>
+        </section>
+
+        <section class="main__carrousel">
+            <h2>Romance sin cursilería</h2>
+            <div class="main__carrousel --row" id="romance"></div>
+        </section>
+
+        <section class="main__carrousel">
+            <h2>Ríete o sufre</h2>
+            <div class="main__carrousel --row" id="comedy"></div>
+        </section>
+
+        <section class="main__gridShows" id="gridShows">
+            
+        </section>
+    </main>
+</body>
+</html>
